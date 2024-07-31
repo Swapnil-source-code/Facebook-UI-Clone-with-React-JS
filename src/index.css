@@ -1,0 +1,24 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --body-color:#f0f2f5;
+  --nav-color:#0866ff;
+  --bg-color:#fff;
+}
+.dark-theme{
+  --body-color:#1e1e1e;
+  --nav-color:#000;
+  --bg-color:#000;
+}
+
+body{
+  background: var(--body-color);
+  font-family: 'poppins', sans-serif;
+}
