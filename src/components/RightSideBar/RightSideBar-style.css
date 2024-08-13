@@ -1,3 +1,14 @@
+.right-sidebar{
+  flex-basis: 23%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+  /* background: var(--bg-color); */
+  padding: 20px;
+  border-radius: 4px;
+  color: #626262;
+}
+
 .right-sidebar h4{
   font-weight: 600;
   font-size: 16px;
