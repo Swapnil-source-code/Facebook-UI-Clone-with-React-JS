@@ -11,13 +11,24 @@ import help from '../../assets/images/help.png'
 import display from '../../assets/images/display.png'
 import logout from '../../assets/images/logout.png'
 import arrow from '../../assets/images/arrow.png'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
+
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+
+  useEffect(() => {
+    document.body.classList.toggle('dark-theme', theme === 'dark');
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
 
   return (
     <>
@@ -40,7 +51,10 @@ const Navbar = () => {
           </div>
         </div>
         <div className={`settings-menu ${isOpen ? 'settings-menu-height' : ''}`}>
-          <div id="dark-btn">
+          <div id="dark-btn"
+            className={theme === 'dark' ? 'dark-btn-on' : ''}
+            onClick={toggleTheme}
+          >
             <span />
           </div>
           <div className="settings-menu-inner">
