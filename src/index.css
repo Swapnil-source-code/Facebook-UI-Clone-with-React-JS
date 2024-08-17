@@ -22,3 +22,71 @@ body{
   background: var(--body-color);
   font-family: 'poppins', sans-serif;
 }
+
+/* Media Query for small screen*/
+
+/* for Home Page */
+@media (max-width: 900px){
+  .container {
+    padding: 15px 4%;
+  }
+  .right-sidebar{
+    display: none;
+  }
+  .left-sidebar{
+    display: none;
+  }
+  nav{
+    flex-wrap: wrap;
+  }
+  .search-box{
+    display: none;
+  }
+  .logo{
+    width: 110px;
+    margin-right: 20px;
+  }
+  .nav-left ul li img{
+    width: 20px;
+    margin: 0 8px;
+  }
+  .nav-user-icon img{
+    width: 30px;
+  }
+  .nav-user-icon{
+    margin-left: 0;
+  }
+  .add-post-links{
+    flex-wrap: wrap;
+  }
+  .main-content{
+    flex-basis: 100%;
+  }
+  .story img{
+    width: 30px;
+    border-width: 3px;
+  }
+  .story p{
+    font-size: 10px;
+  }
+  .story.story1 img{
+    width: 25px;
+    bottom: 30px;
+    top: 71px;
+  }
+  .add-post-links a{
+    margin-right: 12px;
+    font-size: 10px;
+  }
+  .add-post-links a img{
+    width: 16;
+    margin-right: 5px;
+  }
+  .post-input-container{
+    padding-left: 0;
+  }
+  .post-container {
+    margin: 12px 0;
+  }
+
+}
