@@ -139,6 +139,7 @@
 }
 .profile-intro p{
   font-size: 14px;
+  line-height: 1.5;
 }
 .friends-box{
   display: grid;
