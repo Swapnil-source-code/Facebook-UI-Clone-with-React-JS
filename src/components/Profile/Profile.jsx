@@ -39,6 +39,7 @@ import like from '../../assets/images/like.png'
 import likeblue from '../../assets/images/like-blue.png'
 import comments from '../../assets/images/comments.png'
 import share from '../../assets/images/share.png'
+import Footer from '../Footer/Footer'
 
 
 
@@ -261,6 +262,7 @@ const Profile = () => {
           </div>
         </div>
 
+        <Footer/>
                 
       </div>
     </>
