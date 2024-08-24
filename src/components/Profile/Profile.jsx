@@ -40,6 +40,7 @@ import likeblue from '../../assets/images/like-blue.png'
 import comments from '../../assets/images/comments.png'
 import share from '../../assets/images/share.png'
 import Footer from '../Footer/Footer'
+import Navbar from '../Navbar/Navbar'
 
 
 
@@ -48,6 +49,7 @@ const Profile = () => {
   
   return (
     <>
+      <Navbar/>
       <div className="profile-container">
         <img src={cover} className="cover-img" />
 

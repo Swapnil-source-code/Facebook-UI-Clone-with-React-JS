@@ -1,20 +1,17 @@
 import './App.css'
-import Navbar from './components/Navbar/Navbar'
-import LeftSideBar from './components/LeftSideBar/LeftSideBar'
-import MainContent from './components/MainContent/MainContent'
-import RightSideBar from './components/RightSideBar/RightSideBar'
+import Home from './components/Home/Home';
+import Profile from './components/Profile/Profile'
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   
 
   return (
     <>
-      <Navbar /> 
-      <div className="container">
-        <LeftSideBar />
-        <MainContent/>
-        <RightSideBar/>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="profile" element={<Profile/>} />
+      </Routes>
     </>
   )
 }

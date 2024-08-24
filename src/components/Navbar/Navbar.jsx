@@ -12,6 +12,7 @@ import display from '../../assets/images/display.png'
 import logout from '../../assets/images/logout.png'
 import arrow from '../../assets/images/arrow.png'
 import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
 
 
@@ -34,7 +35,7 @@ const Navbar = () => {
     <>
       <nav>
         <div className="nav-left">
-          <a href="/index.html"><img src={logo} className="logo" /></a>
+          <Link to="/"><img src={logo} className="logo" /></Link>
           <ul>
             <li><img src={notification} /></li>
             <li><img src={inbox} /></li>
@@ -62,7 +63,7 @@ const Navbar = () => {
               <img src={profilepic} />
               <div>
                 <p>John Nicholson</p>
-                <a href="/profile.html">See your profile</a>
+                  <Link to="/profile">See your profile</Link>
               </div>
             </div>
             <hr />
